@@ -1,0 +1,13 @@
+package com.src.helper;
+
+import java.util.concurrent.Callable;
+
+public class CallableTask implements Callable<V>{
+
+	@Override
+	public Integer call() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

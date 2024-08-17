@@ -1,0 +1,15 @@
+package com.src.helper;
+
+import java.util.UUID;
+
+public class TasksHelper {
+	
+	private static UUID taskOneUUID   = UUID.randomUUID();
+	private static UUID taskTwoUUID   = UUID.randomUUID();
+	private static UUID taskThreeUUID = UUID.randomUUID();
+	
+	public static void getTasksForExecution() {
+		
+	}
+
+}

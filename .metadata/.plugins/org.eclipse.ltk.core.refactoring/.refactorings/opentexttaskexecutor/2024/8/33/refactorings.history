@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.src.code&apos; to &apos;com.src.main&apos;&#x0D;&#x0A;- Original project: &apos;opentexttaskexecutor&apos;&#x0D;&#x0A;- Original element: &apos;opentexttaskexecutor/src/com.src.code&apos;&#x0D;&#x0A;- Renamed element: &apos;opentexttaskexecutor/src/com.src.main&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings&#x0D;&#x0A;- Rename subpackages of the package" description="Rename package &apos;com.src.code&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.src.code" name="com.src.main" qualified="false" references="true" stamp="1723844595698" textual="false" version="1.0"/>
+</session>

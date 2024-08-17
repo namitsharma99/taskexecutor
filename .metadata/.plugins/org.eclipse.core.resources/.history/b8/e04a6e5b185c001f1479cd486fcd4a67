@@ -1,0 +1,31 @@
+package com.src.helper;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+import com.src.code.Main.Task;
+import com.src.code.Main.TaskGroup;
+import com.src.code.Main.TaskType;
+
+public class TasksHelper {
+	
+	private static UUID taskGroupOneUUID   = UUID.randomUUID();
+	private static UUID taskGroupTwoUUID   = UUID.randomUUID();
+	private static UUID taskGroupThreeUUID = UUID.randomUUID();
+	
+	public static void getTasksForExecution() {
+		
+		TaskGroup taskGroupOne             = new TaskGroup(taskGroupOneUUID);
+		TaskGroup taskGroupTwo             = new TaskGroup(taskGroupTwoUUID);
+		TaskGroup taskGroupThree           = new TaskGroup(taskGroupThreeUUID);
+		
+		List<Task<Integer>> tasksList = new ArrayList<Task<Integer>>();
+		tasksList.add(new Task<Integer>(UUID.randomUUID(), taskGroupOne  , TaskType.READ , new CallableTask()));
+		tasksList.add(new Task<Integer>(UUID.randomUUID(), taskGroupTwo  , TaskType.WRITE, new CallableTask()));
+		tasksList.add(new Task<Integer>(UUID.randomUUID(), taskGroupThree, TaskType.READ , new CallableTask()));
+		
+		return tasksList;
+	}
+
+}

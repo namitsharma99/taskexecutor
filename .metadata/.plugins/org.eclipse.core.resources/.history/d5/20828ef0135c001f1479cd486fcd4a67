@@ -1,0 +1,24 @@
+package com.src.code;
+
+import java.lang.constant.Constable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+import com.src.constant.Constants;
+
+public class Runner {
+	
+	static String taskNature = Constants.CPU_INTENSIVE;
+
+	public static void main(String[] args) {
+		
+		
+		int threadCount = getOptimumThreadCount(taskNature);
+
+		ExecutorService service = Executors.newFixedThreadPool(0);
+		
+		
+		
+	}
+
+}

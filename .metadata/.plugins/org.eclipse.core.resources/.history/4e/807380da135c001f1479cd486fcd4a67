@@ -1,0 +1,5 @@
+package com.src.constant;
+
+public interface Constants {
+
+}

@@ -1,0 +1,23 @@
+package com.src.ececute;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
+
+import com.src.main.Main.Task;
+import com.src.main.Main.TaskExecutor;
+
+public class TaskExecutorImpl implements TaskExecutor{
+
+	public TaskExecutorImpl(ExecutorService service) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public <T> Future<T> submitTask(Task<T> task) {
+		// TODO Auto-generated method stub
+		
+		Future<Intger> future = 
+		return null;
+	}
+
+}

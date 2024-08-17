@@ -1,0 +1,7 @@
+package com.src.ececute;
+
+import com.src.main.Main.TaskExecutor;
+
+public class TaskExecutorImpl implements TaskExecutor{
+
+}

@@ -1,0 +1,35 @@
+package com.src.ececute;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
+
+import com.src.helper.TasksHelper;
+import com.src.main.Main.Task;
+import com.src.main.Main.TaskExecutor;
+
+public class TaskExecutorImpl implements TaskExecutor{
+	
+	ExecutorService service;
+
+	public TaskExecutorImpl(ExecutorService service) {
+		
+		this.service = service;
+		List<Task<Integer>> tasks = TasksHelper.getTasksForExecution();
+		
+		for (Task<Integer> task : tasks) {
+			service.submit(task);
+		}
+		
+	}
+
+
+	@Override
+	public <T> Future<T> submitTask(Task<T> task) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}
